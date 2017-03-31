@@ -31,8 +31,8 @@ import org.springframework.context.support.PropertySourcesPlaceholderConfigurer;
 @Configuration
 @EnableConfigurationProperties
 @PropertySources(value = {
-    @PropertySource(value = { "classpath:/config/mode/${appMode:debug}/config.properties" }),
-    @PropertySource(value = { "file:${confDir}/config.properties" }),
+    @PropertySource(value = { "classpath:/config/mode/${" + InitHelper.PROPERTY_APP_MODE + ":debug}/config.properties" }),
+    @PropertySource(value = { "file:${" + InitHelper.PROPERTY_CONF_DIR + "}/config.properties" }),
     @PropertySource(value = { "classpath:/bootstrap.properties" }),
 })
 @SpringBootApplication(scanBasePackageClasses = {
