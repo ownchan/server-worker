@@ -17,7 +17,6 @@
       <groupId>org.ownchan.server</groupId>
       <artifactId>ownchan-server-joint</artifactId>
     </dependency>
-
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-web</artifactId>
